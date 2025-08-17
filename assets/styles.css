@@ -1,3 +1,47 @@
+/* Central tile for resource/social sections */
+.central-tile-section {
+	max-width: 720px;
+	margin: 2rem auto;
+	background: var(--card-bg);
+	border-radius: 12px;
+	box-shadow: var(--card-shadow);
+	padding: 2rem 1.5rem;
+}
+
+/* Responsive list for resource/social links */
+.central-tile-section ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem 2rem;
+	justify-content: center;
+	max-width: 600px;
+	margin: 0 auto;
+}
+.central-tile-section li {
+	flex: 1 1 180px;
+	min-width: 120px;
+	text-align: center;
+}
+.central-tile-section a {
+	font-weight: 600;
+	word-break: break-word;
+}
+
+@media (max-width: 600px) {
+	.central-tile-section {
+		padding: 1.2rem 0.5rem;
+	}
+	.central-tile-section ul {
+		gap: 0.5rem 0.5rem;
+		max-width: 100%;
+	}
+	.central-tile-section li {
+		min-width: 90px;
+		font-size: 0.98em;
+	}
+}
 :root { color-scheme: light dark; }
 * { box-sizing: border-box; }
 
